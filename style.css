@@ -1,0 +1,102 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make the entire body fill the viewport and center the content */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E3440; /* Dark background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the main container */
+div {
+    background-color: #4C566A; /* Slightly lighter background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    text-align:left;
+    color: #ECEFF4; /* Light text color */
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Style for the heading */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #88C0D0; /* Cool light blue */
+}
+
+/* Style for labels and inputs */
+label {
+    font-size: 1.2rem;
+    color: #D8DEE9; /* Lighter text color */
+}
+
+input[type="number"] {
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border: 2px solid #81A1C1;
+    border-radius: 5px;
+    background-color: #3B4252;
+    color: #ECEFF4;
+}
+
+/* Align checkboxes and labels */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align text and checkboxes to the left */
+    margin-bottom: 15px;
+}
+
+/* Adjust spacing for checkbox and label */
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style for the button */
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #81A1C1; /* Cool blue button */
+    color: #ECEFF4; /* Light text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #88C0D0; /* Lighter blue on hover */
+}
+
+/* Style for the generated password area */
+#generatedPassword {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #A3BE8C; /* Light green */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+    div {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    button {
+        width: 100%;
+    }
+}
